@@ -13,43 +13,39 @@ knitr::opts_chunk$set(
 )
 ```
 
-# summarizestats package
+# summarize_stats package
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
-The goal of summarizestats is to ...
+The **summarize_stats** package contains the function *summarize_stats* that generates the mean, median, and the range values of a numeric variable across a categorical variable. This facilitates the comparison of these summary statistics across different groups within a categorical variable of interest, allowing for further downstream analyses.
 
 ## Installation
 
-You can install the development version of summarizestats from [GitHub](https://github.com/) with:
+You can install the latest version of summarize_stats from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("stat545ubc-2025/summarize_stats-R-package")
+`devtools::install_github('stat545ubc-2025/summarize_stats')`
 ```
 
-## Example
+## Examples of use cases
 
-This is a basic example which shows you how to solve a common problem:
+Example using the steam_games dataset from the *datateachr* package. Investigate the summary statistics of **Steam game prices** (numerical variable) across **purchase types** (factor variable).   
 
-```{r example}
+```{r example 1}
 library(summarizestats)
+library(datateachr) #contains the steam_games dataset
 summarize_stats(df = datateachr::steam_games, numcol = original_price, categcol = types, NAs = TRUE)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+Example using the penguins dataset from the *palmerpenguins* package. Investigate the summary statistics of **bill length** (numerical variable) based on **penguin sex** (factor variable). 
 
-```{r cars}
-summary(cars)
+```{r example 2}
+library(palmerpenguins) #contains the penguins dataset
+summarize_stats(df = penguins, numcol = bill_depth_mm, categcol = sex, NAs = TRUE)
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
+## Getting Help
 
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+If you have any issues installing/running the package, or if you have any suggestions for improvements, feel free to leave an issue!

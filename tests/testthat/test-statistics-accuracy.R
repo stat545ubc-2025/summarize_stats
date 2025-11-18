@@ -1,5 +1,7 @@
 #First, create a test tibble with the expected outputs for mean, median and range to compare the function's output with.
-exp_results <- steam_games %>% # Use hard-coded variables and functions to ensure that the output is accurate for comparison.
+library(dplyr)
+library(datateachr)
+exp_results <- datateachr::steam_games %>% # Use hard-coded variables and functions to ensure that the output is accurate for comparison.
   group_by(types) %>%
   summarise(mean_col = mean(discount_price, na.rm = TRUE),
             median_col = median(discount_price, na.rm = TRUE),

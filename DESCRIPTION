@@ -3,7 +3,7 @@ Title: Generate Summary Statistics of a Numeric Variable Across Groups of a Cate
 Version: 0.1.0
 Authors@R: 
     person("Steven", "Chen", , "sche455@student.ubc.ca", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: The **summarize_stats** package contains the function *summarize_stats* that generates the mean, median, and the range values of a numeric variable across a categorical variable. This facilitates the comparison of these summary statistics across different groups within a categorical variable of interest, allowing for further downstream analyses.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
