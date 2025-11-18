@@ -1,11 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# summarize_stats package
+# The summarize_stats package
 
-<!-- badges: start -->
-
-<!-- badges: end -->
+## Introduction
 
 The **summarize_stats** package contains the function *summarize_stats*
 that generates the mean, median, and the range values of a numeric
@@ -63,5 +61,15 @@ summarize_stats(df = penguins, numcol = bill_depth_mm, categcol = sex, NAs = TRU
 
 ## Getting Help
 
-If you have any issues installing/running the package, or if you have
-any suggestions for improvements, feel free to leave an issue!
+Try using the following code in your R console after installing if you
+have any questions:
+
+``` r
+?summarize_stats 
+```
+
+This will provide a description of the package and definitions of each
+parameter within the function.
+
+If you have any further issues installing/running the package, or if you
+have any suggestions for improvements, feel free to leave an issue!
