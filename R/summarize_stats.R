@@ -1,4 +1,4 @@
-#' Generate summary statistics across groups
+#' @title Generate Summary Statistics of a Numeric Variable Across Groups of a Categorical Variable
 #' Outputs the mean, median, and range of a numerical variable across different groups of a categorical variable in a dataframe.
 #'
 #' @description summarize_stats generates the mean, median, and the range values of a numeric variable across a categorical variable.
